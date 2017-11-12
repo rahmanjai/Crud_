@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.rahja.crud.MainActivity">
+
+    <View
+        android:layout_margin="24dp"
+        android:id="@+id/garis"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="#333"/>
+
+    <TextView
+        android:id="@+id/teks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CRUD SQLite"
+        android:layout_toRightOf="@id/garis"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_margin="24dp"
+        android:id="@+id/garis2"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="#333"
+        android:layout_toRightOf="@+id/teks"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:id="@+id/textNpm"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/garis"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edId"
+        android:layout_toRightOf="@id/textNpm"
+        android:layout_below="@+id/garis2"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:id="@+id/textNama"
+        android:layout_margin="15dp"
+        android:layout_below="@id/textNpm"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edNama"
+        android:layout_toRightOf="@id/textNama"
+        android:layout_below="@id/edId"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:id="@+id/textAlamat"
+        android:layout_margin="16dp"
+        android:layout_below="@id/textNama"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edAlamat"
+        android:layout_toRightOf="@id/textNama"
+        android:layout_below="@id/edNama"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="No Hp"
+        android:id="@+id/textHp"
+        android:layout_margin="15dp"
+        android:layout_below="@id/textAlamat"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edHp"
+        android:layout_toRightOf="@id/textHp"
+        android:layout_below="@id/edAlamat"/>
+
+    <Button
+        android:id="@+id/tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAMBAH"
+        android:layout_below="@id/textHp"/>
+    <Button
+        android:id="@+id/ubah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UBAH"
+        android:layout_below="@id/textHp"
+        android:layout_toRightOf="@id/tambah"/>
+    <Button
+        android:id="@+id/hapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HAPUS"
+        android:layout_below="@id/textHp"
+        android:layout_toRightOf="@id/ubah"/>
+    <Button
+        android:id="@+id/lihat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAMPIL"
+        android:layout_toRightOf="@id/hapus"
+        android:layout_below="@id/textHp"/>
+
+</RelativeLayout>
